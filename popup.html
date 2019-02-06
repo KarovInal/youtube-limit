@@ -4,23 +4,36 @@
       <meta charset="utf-8">
       <style>
         body {
+          width: 200px;
           font-family: sans-serif;
+        }
+        .header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        #ikarov {
+          margin-top: 5px;
+          display: block;
+          text-align: center;
         }
       </style>
     </head>
     <body>
-      <h3>Youtube Limit</h3>
+      <div class="header">
+        <h1>Youtube Limit</h3> <img class='logo' src="images/logo32.png" />
+      </div>
       <div id='rules'>
         <input type="checkbox" id='isDisableRecommendations' name='isDisableRecommendations' />
         <label for="isDisableRecommendations">Отлючить рекомендации</label>
-
+        <br />
         <input type="checkbox" id='isDisableTrends' name='isDisableTrends' />
         <label for="isDisableTrends">Отлючить тренды</label>
-
+        <br />
         <input type="checkbox" id='isDisableSubscriptions' name='isDisableSubscriptions' />
         <label for="isDisableSubscriptions">Отлючить подписки</label>
       </div>
-      <small>made by ikarov</small>
+      <small id="ikarov">made by ikarov</small>
       <script src='popup.js'></script>
     </body>
   </html>
