@@ -1,16 +1,26 @@
 <!DOCTYPE html>
   <html>
     <head>
+      <meta charset="utf-8">
       <style>
-        button {
-          height: 30px;
-          width: 30px;
-          outline: none;
+        body {
+          font-family: sans-serif;
         }
       </style>
     </head>
     <body>
-      <button id="changeColor"></button>
+      <h3>Youtube Limit</h3>
+      <div id='rules'>
+        <input type="checkbox" id='isDisableRecommendations' name='isDisableRecommendations' />
+        <label for="isDisableRecommendations">Отлючить рекомендации</label>
+
+        <input type="checkbox" id='isDisableTrends' name='isDisableTrends' />
+        <label for="isDisableTrends">Отлючить тренды</label>
+
+        <input type="checkbox" id='isDisableSubscriptions' name='isDisableSubscriptions' />
+        <label for="isDisableSubscriptions">Отлючить подписки</label>
+      </div>
+      <small>made by ikarov</small>
       <script src='popup.js'></script>
     </body>
   </html>

@@ -2,7 +2,7 @@
   "name": "Youtube limit",
   "version": "0.1",
   "description": "Расширение для блокировки ленты в Youtube.",
-  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "permissions": ["tabs", "activeTab", "declarativeContent", "storage"],
   "background": {
     "scripts": ["app.js"],
     "persistent": false
@@ -17,6 +17,10 @@
       "128": "images/get_started128.png"
     }
   },
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["https://www.youtube.com/", "https://www.youtube.com/*"]
+  }],
   "icons": {
     "16": "images/get_started16.png",
     "32": "images/get_started32.png",
